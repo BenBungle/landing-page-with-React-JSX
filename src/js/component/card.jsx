@@ -1,27 +1,30 @@
 import React from "react";
 
-function Card() {
+function Card(props) {
   return (
-    <div className="card-img-top" alt="..." style={{width: "18rem"}}>
+    <div className="card-img-top my-5 mx-4" alt="..." style={{ width: "18rem" }} >
       <img
-        src="https://img.freepik.com/vector-gratis/bandera-dia-internacional-contra-uso-indebido-trafico-ilicito-drogas_23-2149414239.jpg?size=626&ext=jpg&ga=GA1.2.444628794.1678494005&semt=popular"
-        className="card-img-top" style={{objectFit: "contain",  width:"100%", height:"40vh"}}
+        src={props.imagen}
+        className="card-img-top"
+        style={{ objectFit: "contain", width: "100%", height: "40vh" }}
         alt="..."
       ></img>
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">
-          some quick example text to build on the card title and make up the
-          bulk
+        <h5 className="card-title my-1">{props.titulo}</h5>
+        <p className="card-text my-1">
+          {props.parrafo}
         </p>
-        <a href="#" className="btn btn-primary">
-          go somewhere
+        <a href="#" className="btn btn-success my-1" style={{border: "1px solid black"}}>
+          Find out More!
         </a>
       </div>
     </div>
   );
 }
+
+
 export default Card;
+//los prop.types estructuras de datos, que tipo de datos de props ya definidos. y props primero antes de usar el prop.types (variable qe creo para dar informacion...)
 //los mandamientos de react
 //1- toda etiqueta que se abre, se debe cerrar
 //2- toda etiqueta de srtyle en line se comporta como si fuera n objeto en JS
@@ -33,4 +36,5 @@ export default Card;
 // let estilos {width: 18rem }
 //la palabra class ya existe, con propositos diferentes... HTML y JS
 //toda Class de html se va a transformar a className!!
-//
+//defino una variable en el componente Card, props parametros que defino en mis funciones de JSX, les paso informacion desde el componente padre(funcion card) y el componente hijo (card en home, el render del componente card) le paso la informacion 
+//prop.types es la definicion del tipo de dato
