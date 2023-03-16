@@ -36,36 +36,47 @@ import Footer from "./footer.jsx";
 //import nombre funcion from "./component/home.jsx";
 function Cimiento() {
   return (
-    <div className="row">
-      <Navbar />
-      <Jumbotron
-      titulo1="Welcome to InnovationAvantGarde"
-      parrafo1="Wondering about the future of human kind? Here you will find the best topics on science, music, drugs and more. Remember to sign up to our newsletter regarding more information on the best online journal through the world of avantgarde"
-      imagen1="https://img.freepik.com/vector-gratis/fondo-abstracto-lineas-blancas-horizontales-dinamicas_1017-33891.jpg?size=626&ext=jpg&uid=R95930245&ga=GA1.1.444628794.1678494005&semt=sph"
-      />
-      <Card
-        imagen="https://img.freepik.com/vector-gratis/bandera-dia-internacional-contra-uso-indebido-trafico-ilicito-drogas_23-2149414239.jpg?size=626&ext=jpg&ga=GA1.2.444628794.1678494005&semt=popular"
-        titulo="Drug Abuse"
-        parrafo="Fighting addiction is difficult task for anyone"
-      />
-      <Card
-        imagen="https://img.freepik.com/foto-gratis/piedras-zen-apiladas-fondo-arena-arte-concepto-equilibrio_53876-110629.jpg?size=626&ext=jpg&uid=R95930245&ga=GA1.2.444628794.1678494005&semt=sph"
-        titulo="The use of Meditation for drug abuse"
-        parrafo="When people are frustrated trying"
-      />
-      <Card
-        imagen="https://img.freepik.com/vector-gratis/fondo-azul-morado-dia-mundial-contra-cancer_23-2147734364.jpg?size=626&ext=jpg&uid=R95930245&ga=GA1.1.444628794.1678494005&semt=sph"
-        titulo="Why do people get Cancer?"
-        parrafo="There is a lot of debate about the origin of all the types of Cancer diseases, but when it comes to non-hereditary cancer, we ask ourselves, how is that possible? there's a lot of people who gets cancer by psychomatic consequences."
-      />
-      <Card
-      imagen="https://img.freepik.com/vector-gratis/vector-elemento-diseno-ilusion-agujero-gusano-cuadricula-3d_53876-140887.jpg?size=626&ext=jpg&uid=R95930245&ga=GA1.1.444628794.1678494005&semt=ais"
-      titulo="Satalite James Webb new discovery"
-      parrafo="NASA has publicated a new article about an amazing new research on a event horizon using their greatest Space Telescope"
-      />
-      <Footer
-      />
-    </div>
+    <>
+      <Navbar/>
+      <div className="container-fluid">
+        <div className="row">
+          <Jumbotron
+            titulo1="Welcome to InnovationAvantGarde"
+            parrafo1="Wondering about the future of human kind? Here you will find the best topics on science, music, drugs and more. Remember to sign up to our newsletter regarding more information on the best online journal through the world of avantgarde"
+            imagen1="https://img.freepik.com/vector-gratis/fondo-abstracto-lineas-blancas-horizontales-dinamicas_1017-33891.jpg?size=626&ext=jpg&uid=R95930245&ga=GA1.1.444628794.1678494005&semt=sph"
+          />
+          <div className="col-md-3">
+            <Card
+              imagen="https://img.freepik.com/vector-gratis/bandera-dia-internacional-contra-uso-indebido-trafico-ilicito-drogas_23-2149414239.jpg?size=626&ext=jpg&ga=GA1.2.444628794.1678494005&semt=popular"
+              titulo="Drug Abuse"
+              parrafo="Fighting addiction is difficult task for anyone"
+            />
+          </div>
+          <div className="col-md-3">
+            <Card
+              imagen="https://img.freepik.com/foto-gratis/piedras-zen-apiladas-fondo-arena-arte-concepto-equilibrio_53876-110629.jpg?size=626&ext=jpg&uid=R95930245&ga=GA1.2.444628794.1678494005&semt=sph"
+              titulo="The use of Meditation for drug abuse"
+              parrafo="When people are frustrated trying"
+            />
+          </div>
+          <div className="col-md-3">
+            <Card
+              imagen="https://img.freepik.com/vector-gratis/fondo-azul-morado-dia-mundial-contra-cancer_23-2147734364.jpg?size=626&ext=jpg&uid=R95930245&ga=GA1.1.444628794.1678494005&semt=sph"
+              titulo="Why do people get Cancer?"
+              parrafo="There is a lot of debate about the origin of all the types of Cancer diseases, but when it comes to non-hereditary cancer, we ask ourselves, how is that possible? there's a lot of people who gets cancer by psychomatic consequences."
+            />
+          </div>
+          <div className="col-md-3">
+            <Card
+              imagen="https://img.freepik.com/vector-gratis/vector-elemento-diseno-ilusion-agujero-gusano-cuadricula-3d_53876-140887.jpg?size=626&ext=jpg&uid=R95930245&ga=GA1.1.444628794.1678494005&semt=ais"
+              titulo="Satalite James Webb new discovery"
+              parrafo="NASA has publicated a new article about an amazing new research on a event horizon using their greatest Space Telescope"
+            />
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 }
 

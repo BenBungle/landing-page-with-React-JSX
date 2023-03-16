@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div class="container-fluid bg-dark">
-      <footer class="d-flex justify-content-center py-3 my-3">
+      <footer class="d-flex justify-content-center py-3">
         <div class="col-md-4 d-flex align-items-center">
           <a
             href="/"

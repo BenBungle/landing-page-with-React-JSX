@@ -2,11 +2,11 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div className="card-img-top my-5 mx-4" alt="..." style={{ width: "18rem" }} >
+    <div className="card-img-top my-5 h-100 p-3" alt="...">
       <img
         src={props.imagen}
         className="card-img-top"
-        style={{ objectFit: "contain", width: "100%", height: "40vh" }}
+        style={{ objectFit: "cover", width: "100%", height: "40vh" }}
         alt="..."
       ></img>
       <div className="card-body">
